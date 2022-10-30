@@ -1,0 +1,13 @@
+.form {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.todos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+
+

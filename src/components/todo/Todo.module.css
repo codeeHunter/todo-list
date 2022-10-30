@@ -1,0 +1,87 @@
+
+.form {
+    background: #5f5f5f;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.formChecked {
+    opacity: .5;
+}
+
+.form label {
+    color: white;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.form .checker:checked, 
+.form .checker:not(:checked) {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.form .checker:checked + label, 
+.form .checker:not(:checked) + label {
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    margin-left: 5px;
+}
+
+.form .checker:checked + label:before, 
+.form .checker:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+}
+
+
+
+.form .checker:checked + label:after, 
+.form .checker:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.form .checker:checked + label:after, 
+.form .checker:not(:checked) + label:after {
+    left: 3px;
+    top: 4px;
+    width: 8px;
+    height: 3px;
+    border-left: 4px solid #3e2734;
+    border-bottom: 4px solid #3e2734;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.form .checker:not(:checked) + label:after {
+    opacity: 0;
+}
+
+.form .checker:checked + label:after {
+    opacity: 1;
+}

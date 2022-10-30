@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "todolist",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -39,5 +39,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "## Установка приложения. - Скопируйте и вставьте в терминале, куда хотите установить https://github.com/codeeHunter/todo-list.git - Перейдите в папку, где установилась и напишите npm i && npm run start.",
+  "main": "index.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
 }
